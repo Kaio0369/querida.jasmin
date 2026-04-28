@@ -566,7 +566,7 @@ function tick(){
     // Collision
     if(rect && prect &&
        left < 90 && left > 50 &&
-       playerBottom < PLAYER_BOTTOM+5){
+       playerBottom < PLAYER_BOTTOM+2){
       loseLife();
       obs.remove(); obstacles.splice(i,1);
       continue;
