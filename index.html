@@ -521,7 +521,7 @@ function jump(){
   }
   if(!isJumping && gameRunning){
     isJumping=true;
-    jumpVel=18;
+    jumpVel=14;
     player.classList.add('jumping');
     setTimeout(()=>player.classList.remove('jumping'),500);
   }
@@ -566,7 +566,7 @@ function tick(){
     // Collision
     if(rect && prect &&
        left < 90 && left > 50 &&
-       playerBottom < PLAYER_BOTTOM+2){
+       playerBottom < PLAYER_BOTTOM+1){
       loseLife();
       obs.remove(); obstacles.splice(i,1);
       continue;
