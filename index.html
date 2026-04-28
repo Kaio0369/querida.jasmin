@@ -462,11 +462,12 @@
     <h2>Querida Jasmin,</h2>
     <p>
       Só queria te lembrar que você é uma pessoa<br>
-      <span class="highlight">incrível e muito especial</span>. 🌷<br><br>
+      <span class="highlight">incrível e muito especial, não apenas para mim, mas para todos ao seu redor</span>. 🌷<br><br>
       Nos dias difíceis, saiba que te tenho do lado<br>
       e que você importa <em>muito</em> pra mim.<br><br>
       Você merece todo o carinho do mundo <br>
       tanto quanto esse gatinho aqui embaixo. 🐱💕<br><br>
+      <br>Com Amor e Carinho Kaio<br>
       <strong>Eu gosto muito de você!</strong>
     </p>
     <div class="hearts-row">💗 🐾 💗 🐾 💗</div>
@@ -520,7 +521,7 @@ function jump(){
   }
   if(!isJumping && gameRunning){
     isJumping=true;
-    jumpVel=14;
+    jumpVel=18;
     player.classList.add('jumping');
     setTimeout(()=>player.classList.remove('jumping'),500);
   }
@@ -533,7 +534,7 @@ function tick(){
   // Player physics
   if(isJumping){
     playerBottom+=jumpVel;
-    jumpVel-=0.9;
+    jumpVel-=0.7;
     if(playerBottom<=PLAYER_BOTTOM){
       playerBottom=PLAYER_BOTTOM;
       isJumping=false;
